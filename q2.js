@@ -1,5 +1,7 @@
-var string = 'abcdefghijklmnopqrtuvwxyz';
+function check(str){
+    return new Set(str.toLowerCase().replace(/[^a-z]/g, "") ).size === 26;
+} 
 
-var check = new Set(string.toLowerCase().replace(/[^a-z]/g, "") ).size === 26;
-
-console.log(check);
+console.log(check("The quick brown fox jumps over the lazy dog."));
+console.log(check('abcdefghijklmnopqrstuvwxyz'));
+console.log(check('abcdefhijklmnopqrstuvwxyz')); //missing g
