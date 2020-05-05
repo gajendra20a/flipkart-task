@@ -1,4 +1,4 @@
-function indexEqualsValue(arry){ 
+const indexEqualsValue = (arry) => { 
     return arry.findIndex(
         (val, index) => val === index
     );

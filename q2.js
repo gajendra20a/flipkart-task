@@ -1,4 +1,4 @@
-function check(str){
+const check = (str) => {
     return new Set(str.toLowerCase().replace(/[^a-z]/g, "") ).size === 26;
 } 
 

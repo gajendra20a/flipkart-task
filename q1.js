@@ -1,4 +1,4 @@
-function backspace(str) {
+const backspace = (str) =>{
     var newString = [];
     str.split('').map(function(alpha, i){
         if(alpha !== '#'){
