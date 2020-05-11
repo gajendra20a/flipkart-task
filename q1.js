@@ -1,3 +1,10 @@
+//1. Assume "#" is like a backspace in string. This means that string "a#bc#d" is actually "bd". 
+//Your task is to process a string with "#" symbols.
+//a. "abc#d##c" ==> "ac"
+//b. "abc##d######" ==> ""
+//c. "#######" ==> ""
+//d. "" ==> ""
+
 const backspace = (str) =>{
     var newString = [];
     str.split('').map(function(alpha, i){
